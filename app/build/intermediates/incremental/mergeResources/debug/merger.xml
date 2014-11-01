@@ -82,6 +82,8 @@
                 </string>
                 <string name="app_name" >YHack Project
                 </string>
+                <string name="submit" >Submit to cloud
+                </string>
             </file>
             <file
                 path="/Users/Colin/projects/yhack_app/app/src/main/res/values/styles.xml"
@@ -91,7 +93,7 @@
 
                 <style
                     name="AppTheme"
-                    parent="android:Theme.Holo.Light.DarkActionBar" >
+                    parent="android:Theme.Holo" >
                 </style>
             </file>
             <file
@@ -117,6 +119,66 @@
                 path="/Users/Colin/projects/yhack_app/app/src/main/res/xml/appwidget_info.xml"
                 qualifiers=""
                 type="xml" />
+            <file
+                name="cloud"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/drawable-hdpi/cloud.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="cloud"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/drawable-mdpi/cloud.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="cloud"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/drawable-xhdpi/cloud.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="cloud"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/drawable-xxhdpi/cloud.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="cloud_green"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/drawable-mdpi/cloud_green.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="cloud_red"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/drawable-xxhdpi/cloud_red.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="cloud_green"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/drawable-xhdpi/cloud_green.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="cloud_red"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/drawable-mdpi/cloud_red.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="cloud_red"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/drawable-xhdpi/cloud_red.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="cloud_green"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/drawable-hdpi/cloud_green.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="cloud_red"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/drawable-hdpi/cloud_red.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="cloud_green"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/drawable-xxhdpi/cloud_green.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
         </source>
         <source path="/Users/Colin/projects/yhack_app/app/build/generated/res/rs/debug" />
         <source path="/Users/Colin/projects/yhack_app/app/build/generated/res/generated/debug" />

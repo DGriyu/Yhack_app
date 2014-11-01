@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/widget_margin">
-    <LinearLayout
+    <ImageView
+        android:id="@+id/statusImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
-        android:background="@drawable/my_widget_background">
-        …
-    </LinearLayout>
+        android:orientation="horizontal"
+        android:src="@drawable/cloud_green">
+    </ImageView>
 </FrameLayout>
 
 <!--
