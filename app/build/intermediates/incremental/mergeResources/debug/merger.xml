@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res" >
+            <file
+                name="ic_launcher"
+                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/drawable-hdpi/ic_launcher.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="preview"
+                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/drawable-hdpi/preview.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/drawable-mdpi/ic_launcher.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="preview"
+                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/drawable-mdpi/preview.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="preview"
+                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/drawable-xhdpi/preview.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="preview"
+                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/drawable-xxhdpi/preview.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="appwidget"
+                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/layout/appwidget.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/values/strings.xml"
+                qualifiers="" >
+                <string name="app_name" >Yhackproject
+                </string>
+            </file>
+            <file
+                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/values/styles.xml"
+                qualifiers="" >
+                <dimen name="widget_margin" >8dp
+                </dimen>
+
+                <style
+                    name="AppTheme"
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
+                </style>
+            </file>
+            <file
+                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/values-v21/styles.xml"
+                qualifiers="v21" >
+
+                <style
+                    name="AppTheme"
+                    parent="android:Theme.Material.Light" >
+                </style>
+
+                <dimen name="widget_margin" >8dp
+                </dimen>
+            </file>
+            <file
+                name="appwidget_info"
+                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/xml/appwidget_info.xml"
+                qualifiers=""
+                type="xml" />
+        </source>
+        <source path="/Users/Riyu/Documents/Yhack/Yhackproject/app/build/generated/res/rs/debug" />
+        <source path="/Users/Riyu/Documents/Yhack/Yhackproject/app/build/generated/res/generated/debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/debug/res" />
+    </dataSet>
+
+</merger>
