@@ -3,28 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/widget_margin">
-    <ImageView
+
+    <ImageButton
         android:id="@+id/statusImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:src="@drawable/cloud_green">
-    </ImageView>
+    </ImageButton>
 </FrameLayout>
-
-<!--
-<FrameLayout
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:padding="@dimen/widget_margin">
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:background="@drawable/my_widget_background">
-    …
-</LinearLayout>
-
-</FrameLayout>
---><!-- From: file:/Users/Colin/projects/yhack_app/app/src/main/res/layout/appwidget.xml -->
+<!-- From: file:/Users/Riyu/Documents/Yhack/Yhack_app/app/src/main/res/layout/appwidget.xml -->

@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme" >
         <receiver android:name=".StatusAppWidgetProvider" >
             <intent-filter>
+                <action android:name="MY_PACKAGE_NAME.WIDGET_BUTTON" />
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
 

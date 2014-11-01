@@ -3,13 +3,12 @@
 <appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
     android:minWidth="40dp"
     android:minHeight="40dp"
-    android:updatePeriodMillis="86400000"
+    android:updatePeriodMillis="1000"
     android:previewImage="@drawable/preview"
     android:initialLayout="@layout/appwidget"
     android:resizeMode="none"
-    android:widgetCategory="home_screen"
-    android:configure="com.example.riyu.yhackproject.SettingsActivity">
+    android:widgetCategory="home_screen">
 </appwidget-provider>
 <!--android:configure="com.example.android.ExampleAppWidgetConfigure"
-
+android:configure="com.example.riyu.yhackproject.SettingsActivity">
 -->
