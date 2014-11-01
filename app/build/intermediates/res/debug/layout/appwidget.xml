@@ -10,8 +10,6 @@
         android:background="@drawable/my_widget_background">
         …
     </LinearLayout>
-
-
 </FrameLayout>
 
 <!--
@@ -29,4 +27,4 @@ android:padding="@dimen/widget_margin">
 </LinearLayout>
 
 </FrameLayout>
---><!-- From: file:/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/layout/appwidget.xml -->
+--><!-- From: file:/Users/Colin/projects/yhack_app/app/src/main/res/layout/appwidget.xml -->

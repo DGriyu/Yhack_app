@@ -10,8 +10,6 @@
         android:background="@drawable/my_widget_background">
         …
     </LinearLayout>
-
-
 </FrameLayout>
 
 <!--

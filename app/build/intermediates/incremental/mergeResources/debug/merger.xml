@@ -2,60 +2,89 @@
 <merger version="2" >
 
     <dataSet config="main" >
-        <source path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res" >
+        <source path="/Users/Colin/projects/yhack_app/app/src/main/res" >
             <file
                 name="ic_launcher"
-                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/drawable-hdpi/ic_launcher.png"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/drawable-hdpi/ic_launcher.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="preview"
-                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/drawable-hdpi/preview.png"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/drawable-hdpi/preview.png"
                 qualifiers="hdpi-v4"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/drawable-mdpi/ic_launcher.png"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/drawable-mdpi/ic_launcher.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="preview"
-                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/drawable-mdpi/preview.png"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/drawable-mdpi/preview.png"
                 qualifiers="mdpi-v4"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/drawable-xhdpi/ic_launcher.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="preview"
-                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/drawable-xhdpi/preview.png"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/drawable-xhdpi/preview.png"
                 qualifiers="xhdpi-v4"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
                 qualifiers="xxhdpi-v4"
                 type="drawable" />
             <file
                 name="preview"
-                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/drawable-xxhdpi/preview.png"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/drawable-xxhdpi/preview.png"
                 qualifiers="xxhdpi-v4"
                 type="drawable" />
             <file
-                name="appwidget"
-                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/layout/appwidget.xml"
+                name="activity_settings"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/layout/activity_settings.xml"
                 qualifiers=""
                 type="layout" />
             <file
-                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/values/strings.xml"
+                name="appwidget"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/layout/appwidget.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="fragment_settings"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/layout/fragment_settings.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="settings"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/menu/settings.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/values/dimens.xml"
                 qualifiers="" >
-                <string name="app_name" >Yhackproject
+                <dimen name="activity_horizontal_margin" >16dp
+                </dimen>
+                <dimen name="activity_vertical_margin" >16dp
+                </dimen>
+            </file>
+            <file
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/values/strings.xml"
+                qualifiers="" >
+                <string name="title_activity_settings" >YHack Project Settings
+                </string>
+                <string name="action_settings" >Settings
+                </string>
+                <string name="enter_name" >Enter your real name, please!
+                </string>
+                <string name="app_name" >YHack Project
                 </string>
             </file>
             <file
-                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/values/styles.xml"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/values/styles.xml"
                 qualifiers="" >
                 <dimen name="widget_margin" >8dp
                 </dimen>
@@ -66,7 +95,7 @@
                 </style>
             </file>
             <file
-                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/values-v21/styles.xml"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/values-v21/styles.xml"
                 qualifiers="v21" >
 
                 <style
@@ -78,16 +107,22 @@
                 </dimen>
             </file>
             <file
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/values-w820dp/dimens.xml"
+                qualifiers="w820dp-v13" >
+                <dimen name="activity_horizontal_margin" >64dp
+                </dimen>
+            </file>
+            <file
                 name="appwidget_info"
-                path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/xml/appwidget_info.xml"
+                path="/Users/Colin/projects/yhack_app/app/src/main/res/xml/appwidget_info.xml"
                 qualifiers=""
                 type="xml" />
         </source>
-        <source path="/Users/Riyu/Documents/Yhack/Yhackproject/app/build/generated/res/rs/debug" />
-        <source path="/Users/Riyu/Documents/Yhack/Yhackproject/app/build/generated/res/generated/debug" />
+        <source path="/Users/Colin/projects/yhack_app/app/build/generated/res/rs/debug" />
+        <source path="/Users/Colin/projects/yhack_app/app/build/generated/res/generated/debug" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="/Users/Riyu/Documents/Yhack/Yhackproject/app/src/debug/res" />
+        <source path="/Users/Colin/projects/yhack_app/app/src/debug/res" />
     </dataSet>
 
 </merger>

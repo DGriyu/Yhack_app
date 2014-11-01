@@ -7,8 +7,9 @@
     android:previewImage="@drawable/preview"
     android:initialLayout="@layout/appwidget"
     android:resizeMode="none"
-    android:widgetCategory="home_screen">
+    android:widgetCategory="home_screen"
+    android:configure="com.example.riyu.yhackproject.SettingsActivity">
 </appwidget-provider>
 <!--android:configure="com.example.android.ExampleAppWidgetConfigure"
 
---><!-- From: file:/Users/Riyu/Documents/Yhack/Yhackproject/app/src/main/res/xml/appwidget_info.xml -->
+--><!-- From: file:/Users/Colin/projects/yhack_app/app/src/main/res/xml/appwidget_info.xml -->
