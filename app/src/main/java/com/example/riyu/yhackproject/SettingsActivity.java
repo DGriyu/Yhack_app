@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
 import android.appwidget.AppWidgetManager;
+import android.bluetooth.BluetoothManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -92,6 +93,15 @@ public class SettingsActivity extends Activity {
                     //in the future, spit out to Galileo server via HTTP
                     //should implement some way that we don't exit app until HTTP request is returned back
                     //implemented server side
+                    String strMACAddr = ((BluetoothManager) getActivity().getApplicationContext().getSystemService(Context.BLUETOOTH_SERVICE)).getAdapter().getAddress();
+                    String strAddrSimple = "";
+                    for (char c : strMACAddr.toCharArray()) {
+                        if (c >= '0' && c <= '9') {
+                            strAddrSimple += c;
+                        }
+                    }
+                    long addr = Long.parseLong(strAddrSimple, 16);
+                    WebClient.transmitUserMACPair(getActivity().getApplicationContext(), text.getText().toString(), addr);
                     String userInput = text.getText().toString();
                     Toast.makeText(getActivity().getApplicationContext(), userInput, Toast.LENGTH_SHORT).show();
 
