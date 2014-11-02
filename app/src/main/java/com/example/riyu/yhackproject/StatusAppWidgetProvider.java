@@ -1,6 +1,7 @@
 package com.example.riyu.yhackproject;
 
 import android.content.ComponentName;
+import android.app.Activity;
 import android.content.Context;
 import android.appwidget.AppWidgetManager;
 import android.widget.Toast;
@@ -15,13 +16,19 @@ import android.util.Log;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.preference.PreferenceManager;
+import android.bluetooth.BluetoothManager;
+import android.bluetooth.BluetoothAdapter;
+
+
+
 import java.util.prefs.Preferences;
 
 /**
  * Created by Riyu on 10/31/14.
  */
 public class StatusAppWidgetProvider extends AppWidgetProvider {
-
+    private BluetoothAdapter mBluetoothAdapter;
+    private final static int REQUEST_ENABLE_BT = 1;
     Boolean onForBroadcasting;
     AppWidgetManager ref;
     int id;
@@ -32,6 +39,9 @@ public class StatusAppWidgetProvider extends AppWidgetProvider {
     @Override
     public void onReceive(Context context, Intent intent) {
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.appwidget);
+        final BluetoothManager bluetoothManager =
+                (BluetoothManager) context.getSystemService(Context.BLUETOOTH_SERVICE);
+        mBluetoothAdapter = bluetoothManager.getAdapter();
         super.onReceive(context, intent);
         if (WIDGET_BUTTON.equals(intent.getAction())) {
             SharedPreferences prefs = PreferenceManager
@@ -48,10 +58,17 @@ public class StatusAppWidgetProvider extends AppWidgetProvider {
 
             if (onForBroadcasting) {
                 Log.v("Hey", "change green");
-                views.setImageViewResource(R.id.statusImage, R.drawable.cloud_green);
-                //image.setImageResource(R.drawable.cloud_red);
-                editor.putBoolean("onForBroadcasting", true);
-                editor.commit();
+                if (mBluetoothAdapter == null || !mBluetoothAdapter.isEnabled()) {
+                    Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+                    enableBtIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    context.startActivity(enableBtIntent);
+                }
+                else {
+                    views.setImageViewResource(R.id.statusImage, R.drawable.cloud_green);
+                    //image.setImageResource(R.drawable.cloud_red);
+                    editor.putBoolean("onForBroadcasting", true);
+                    editor.commit();
+                }
             }
             else {
                 Log.v("Hey", "change red");
@@ -93,13 +110,23 @@ public class StatusAppWidgetProvider extends AppWidgetProvider {
             //onForBroadcasting = !onForBroadcasting;
             SharedPreferences prefs = PreferenceManager
                     .getDefaultSharedPreferences(context);
-            boolean value = prefs.getBoolean("onForBroadcasting", true);
+            boolean value = prefs.getBoolean("onForBroadcasting", false);
 
             if (value) {
                 Editor editor = prefs.edit();
-                editor.putBoolean("onForBroadcasting", true);
+                editor.putBoolean("onForBroadcasting", false);
                 editor.commit();
             }
+           /* final BluetoothManager bluetoothManager =
+                    (BluetoothManager) context.getSystemService(Context.BLUETOOTH_SERVICE);
+            mBluetoothAdapter = bluetoothManager.getAdapter();*/
+            // Ensures Bluetooth is available on the device and it is enabled. If not,
+// displays a dialog requesting user permission to enable Bluetooth.
+          /*  if (mBluetoothAdapter == null || !mBluetoothAdapter.isEnabled()) {
+                Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+                enableBtIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                context.startActivity(enableBtIntent);
+            }*/
             //views.setOnClickPendingIntent(R.id.button,
             //        getPendingSelfIntent(context, MyOnClick));
 
