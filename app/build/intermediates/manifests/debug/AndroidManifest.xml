@@ -34,11 +34,6 @@
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.example.riyu.yhackproject.DeviceScanActivity"
-            android:label="Bluetooth Scanning"
-            android:theme="@android:style/Theme.NoDisplay" >
-        </activity>
     </application>
 
 </manifest>
